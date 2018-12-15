@@ -114,6 +114,7 @@
 
 	var adrAfte = "https://www.google.fr/maps/place/L'After/@45.2031457,5.7669453,15z/data=!4m2!3m1!1s0x0:0x78e53140e3a09892?ved=2ahUKEwj2rNup2O3eAhUBC8AKHYDWCDgQ_BIwCnoECAUQCA"
 	
+	var adrBowl = "https://www.google.fr/maps/place/BowlCenter+%C3%89chirolles/@45.1507527,5.7147063,17z/data=!3m1!4b1!4m5!3m4!1s0x478a8b4e8abd5aa1:0x5565c01cfe4f18f5!8m2!3d45.1507527!4d5.716895"
 	
 	// fill events given current month
 	var nbDaysInMonth = this.current.clone().add('months', 1).subtract('days', 1).date();	
@@ -134,6 +135,10 @@
 		// Tuesday
 		if (curDate.day() == 2)
 		{
+			var ev = { eventName: 'Bowling Echirolles', styles: 'Salsa', info: 'Initiation à 20h30', address: adrBowl, color: 'pink' };
+			ev.date = curDate;
+			this.events.push(ev);
+			
 			var ev = { eventName: 'Da Vinci Club', styles: 'Bachata/Kizomba', info: '21h', address: adrDavc, color: 'blue' };
 			ev.date = curDate;
 			this.events.push(ev);
