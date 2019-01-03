@@ -190,6 +190,7 @@
 			if ((curMonth == 9  && (i == 13 || i == 27))
 			 || (curMonth == 10 && (i == 10 || i == 24))
 			 || (curMonth == 11 && (i == 08 || i == 22))
+			 || (curMonth == 00 && (i == 05))
 			)
 			{
 				var ev = { eventName: 'Salsa Grenoble', info: 'Initiation à 21h', styles: 'Salsa/Bachata/Merengue', address: adrSaGr, color: 'green' };
