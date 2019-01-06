@@ -210,6 +210,15 @@
 				ev.date = curDate;
 				this.events.push(ev);
 			}
+			
+			// Da Vinci Club
+			if ((curMonth == 00 && i == 12)
+			)
+			{
+				var ev = { eventName: 'Da Vinci Club', styles: 'Salsa/Bachata/Kizomba', info: '20h', address: adrDavc, color: 'blue' };
+				ev.date = curDate;
+				this.events.push(ev);
+			}
 		}
 		
 		// Sunday
