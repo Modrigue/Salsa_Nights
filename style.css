@@ -183,6 +183,7 @@ body {
 .blue { background: rgba(156, 202, 235, 1); }
 .violet { background: rgba(153, 109, 249, 1); }
 .pink { background: rgba(249, 109, 249, 1); }
+.white { background: rgba(249, 249, 249, 1); }
 
 .details {
   position: relative;

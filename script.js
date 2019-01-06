@@ -116,6 +116,8 @@
 	
 	var adrBowl = "https://www.google.fr/maps/place/BowlCenter+%C3%89chirolles/@45.1507527,5.7147063,17z/data=!3m1!4b1!4m5!3m4!1s0x478a8b4e8abd5aa1:0x5565c01cfe4f18f5!8m2!3d45.1507527!4d5.716895"
 	
+	var adrLabe = "https://www.google.fr/maps/place/La+Belle+Electrique/@45.1872341,5.7041817,15z/data=!4m2!3m1!1s0x0:0x16952b4feb50ba3b?ved=2ahUKEwjA6aCdldnfAhVrxoUKHa8nCAUQ_BIwDnoECAIQCA"
+	
 	// fill events given current month
 	var nbDaysInMonth = this.current.clone().add('months', 1).subtract('days', 1).date();	
 	for(var i = 1; i <= nbDaysInMonth ; i++)
@@ -181,6 +183,15 @@
 				ev.date = curDate;
 				this.events.push(ev);
 			}
+			
+			// La Belle Electrique
+			if ((curMonth == 00 && i == 11)
+			)
+			{
+				var ev = { eventName: 'La Belle Electrique', styles: 'Salsa/Bachata/Merengue', info: '21h', address: adrLabe, color: 'white' };
+				ev.date = curDate;
+				this.events.push(ev);
+			}
 		}
 		
 		// Saturday
@@ -190,7 +201,9 @@
 			if ((curMonth == 9  && (i == 13 || i == 27))
 			 || (curMonth == 10 && (i == 10 || i == 24))
 			 || (curMonth == 11 && (i == 08 || i == 22))
-			 || (curMonth == 00 && (i == 05))
+			 || (curMonth == 00 && (i == 05 || i == 19))
+			 || (curMonth == 01 && (i == 02 || i == 16))
+			 || (curMonth == 02 && (i == 02 || i == 16 || i == 30))
 			)
 			{
 				var ev = { eventName: 'Salsa Grenoble', info: 'Initiation à 21h', styles: 'Salsa/Bachata/Merengue', address: adrSaGr, color: 'green' };
