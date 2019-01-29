@@ -169,20 +169,23 @@
 		// Friday
 		if (curDate.day() == 5)
 		{
-			// No Name
-			var ev = { eventName: 'No Name', styles: 'Kizomba/Bachata/Salsa', info: '21h', address: adrNona, color: 'yellow' };
-			ev.date = curDate;
-			this.events.push(ev);
-			
 			// Upper Place
 			if ((curMonth == 09 && i == 12)
 			 || (curMonth == 10 && (i == 02 || i == 23))	
+			 || (curMonth == 01 && i == 01)
+			 || (curMonth == 02 && (i == 01 || i == 29))
+			 || (curMonth == 03 && i == 26)	
 			)
 			{
 				var ev = { eventName: 'Upper Place', styles: 'Salsa/Bachata/Merengue', info: '21h30', address: adrUppe, color: 'red' };
 				ev.date = curDate;
 				this.events.push(ev);
 			}
+			
+			// No Name
+			var ev = { eventName: 'No Name', styles: 'Kizomba/Bachata/Salsa', info: '21h', address: adrNona, color: 'yellow' };
+			ev.date = curDate;
+			this.events.push(ev);
 			
 			// La Belle Electrique
 			if ((curMonth == 00 && i == 11)
