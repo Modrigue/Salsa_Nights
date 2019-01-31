@@ -150,7 +150,10 @@
 		if (curDate.day() == 3)
 		{
 			// Shag Café: 3th Wednesday or July or August
-			if ((i > 2*7 && i < 3*7+1) || curMonth == 6 || curMonth == 7 )
+			if ((i > 2*7 && i < 3*7+1)
+				|| curMonth+1 == 7
+				|| curMonth+1 == 8
+			)
 			{
 				var ev = { eventName: 'Shag Café', styles: 'Salsa/Bachata/Merengue', info: 'Initiation à 20h', address: adrShag, color: 'orange' };
 				ev.date = curDate;
@@ -170,14 +173,25 @@
 		if (curDate.day() == 5)
 		{
 			// Upper Place
-			if ((curMonth == 09 && i == 12)
-			 || (curMonth == 10 && (i == 02 || i == 23))	
-			 || (curMonth == 01 && i == 01)
-			 || (curMonth == 02 && (i == 01 || i == 29))
-			 || (curMonth == 03 && i == 26)	
+			if ((curMonth+1 == 10 && (i == 12))
+			 || (curMonth+1 == 11 && (i == 02 || i == 23))	
+			 || (curMonth+1 == 01 && (i == 04))
+			 || (curMonth+1 == 02 && (i == 01))
+			 || (curMonth+1 == 03 && (i == 01 || i == 29))
+			 || (curMonth+1 == 04 && (i == 26))
 			)
 			{
 				var ev = { eventName: 'Upper Place', styles: 'Salsa/Bachata/Merengue', info: '21h30', address: adrUppe, color: 'red' };
+				ev.date = curDate;
+				this.events.push(ev);
+			}
+			
+			// Salsa Grenoble
+			if ((curMonth+1 == 02 && (i == 01))
+			 || (curMonth+1 == 04 && (i == 05))
+			)
+			{
+				var ev = { eventName: 'Salsa Grenoble', info: 'Initiation à 21h', styles: 'Salsa/Bachata/Merengue', address: adrSaGr, color: 'green' };
 				ev.date = curDate;
 				this.events.push(ev);
 			}
@@ -188,7 +202,7 @@
 			this.events.push(ev);
 			
 			// La Belle Electrique
-			if ((curMonth == 00 && i == 11)
+			if ((curMonth+1 == 01 && i == 11)
 			)
 			{
 				var ev = { eventName: 'La Belle Electrique', styles: 'Salsa/Bachata/Merengue', info: '21h', address: adrLabe, color: 'white' };
@@ -201,12 +215,13 @@
 		if (curDate.day() == 6)
 		{
 			// Salsa Grenoble
-			if ((curMonth == 9  && (i == 13 || i == 27))
-			 || (curMonth == 10 && (i == 10 || i == 24))
-			 || (curMonth == 11 && (i == 08 || i == 22))
-			 || (curMonth == 00 && (i == 05 || i == 19))
-			 || (curMonth == 01 && (i == 02 || i == 16))
-			 || (curMonth == 02 && (i == 02 || i == 16 || i == 30))
+			if ((curMonth+1 == 10 && (i == 13 || i == 27))
+			 || (curMonth+1 == 11 && (i == 10 || i == 24))
+			 || (curMonth+1 == 12 && (i == 08 || i == 22))
+			 || (curMonth+1 == 01 && (i == 05 || i == 19))
+			 || (curMonth+1 == 02 && (i == 16))
+			 || (curMonth+1 == 03 && (i == 02 || i == 16 || i == 30))
+			 || (curMonth+1 == 05 && (i == 11 || i == 25))
 			)
 			{
 				var ev = { eventName: 'Salsa Grenoble', info: 'Initiation à 21h', styles: 'Salsa/Bachata/Merengue', address: adrSaGr, color: 'green' };
@@ -215,7 +230,7 @@
 			}
 			
 			// Da Vinci Club
-			if ((curMonth == 00 && i == 12)
+			if ((curMonth+1 == 01 && i == 12)
 			)
 			{
 				var ev = { eventName: 'Da Vinci Club', styles: 'Salsa/Bachata/Kizomba', info: '20h', address: adrDavc, color: 'blue' };
