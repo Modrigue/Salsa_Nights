@@ -111,6 +111,9 @@
       {
         this.addEvent(curDate, "bowling", 'Initiation à 20h30', 'Salsa' );
         this.addEvent(curDate, "da_vinci", '21h', 'Bachata/Kizomba' );
+
+        if (curMonth <= 6)
+          this.addEvent(curDate, "loco", 'Initiation à 19h', 'Salsa/Bachata' );
       }
       
       // Wednesday
