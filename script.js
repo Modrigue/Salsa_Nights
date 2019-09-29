@@ -103,13 +103,13 @@
       // Monday
       if (curDate.day() == 1)
       {
-        this.addEvent(curDate, "after", '18h', 'Salsa/Bachata/Kizomba' );
+        this.addEvent(curDate, "after", '19h', 'Salsa/Bachata/Kizomba' );
       }
       
       // Tuesday
       if (curDate.day() == 2)
       {
-        this.addEvent(curDate, "bowling", 'Initiation à 20h30', 'Salsa' );
+        //this.addEvent(curDate, "bowling", 'Initiation à 20h30', 'Salsa' );
         this.addEvent(curDate, "da_vinci", '21h', 'Bachata/Kizomba' );
 
         if (curMonth <= 6)
@@ -127,6 +127,13 @@
         {
           this.addEvent(curDate, "shag", 'Initiation à 20h', 'Salsa/Bachata/Merengue' );
         }
+		
+		// Upper Place
+        if ((curMonth == 09)
+        )
+        {
+          this.addEvent(curDate, "upper_place", '19h00', 'Cours & Initiation Salsa/Bachata/Merengue' );
+        }
       }
       
       // Thursday
@@ -139,13 +146,9 @@
       if (curDate.day() == 5)
       {
         // Upper Place
-        if ((curMonth == 10 && (day == 12))
-         || (curMonth == 11 && (day == 02 || day == 23))	
-         || (curMonth == 01 && (day == 04))
-         || (curMonth == 02 && (day == 01))
-         || (curMonth == 03 && (day == 01 || day == 29))
-         || (curMonth == 04 && (day == 26))
-         || (curMonth == 05 && (day == 17))
+        if ((curMonth == 10 && (day == 04))
+		 || (curMonth == 11 && (day == 01))
+	     || (curMonth == 12 && (day == 06))
         )
         {
           this.addEvent(curDate, "upper_place", '21h30', 'Salsa/Bachata/Merengue' );
@@ -170,15 +173,23 @@
       // Saturday
       if (curDate.day() == 6)
       {
+		// Gianonne 
+		if ((curMonth == 09 && day == 28))
+		{
+			this.addEvent(curDate, "gianonne", '20h30', 'Salsa/Bachatta' );
+		} 
+		 
         // Salsa Grenoble
-        if ((curMonth == 10 && (day == 13 || day == 27))
-         || (curMonth == 11 && (day == 10 || day == 24))
-         || (curMonth == 12 && (day == 08 || day == 22))
-         || (curMonth == 01 && (day == 05 || day == 19))
-         || (curMonth == 02 && (day == 16))
-         || (curMonth == 03 && (day == 02 || day == 16 || day == 30))
-         || (curMonth == 05 && (day == 11 || day == 25))
-         || (curMonth == 06 && (day == 08 || day == 22))
+        if ((curMonth == 09 && (day == 14 || day == 28))
+         || (curMonth == 10 && (day == 12 || day == 26))
+		 || (curMonth == 11 && (day == 09 || day == 23))
+         || (curMonth == 12 && (day == 07 || day == 21))
+         || (curMonth == 01 && (day == 04 || day == 18))
+         || (curMonth == 02 && (day == 01 || day == 15 || day == 29))
+         || (curMonth == 03 && (day == 14 || day == 28))
+		 || (curMonth == 04 && (day == 11))
+         || (curMonth == 05 && (day == 09 || day == 23))
+         || (curMonth == 06 && (day == 06 || day == 20))
         )
         {
           this.addEvent(curDate, "salsa_gre", 'Initiation à 21h', 'Salsa/Bachata/Merengue' );
