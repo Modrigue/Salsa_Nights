@@ -176,14 +176,17 @@ body {
   margin: 0 1px;
 }
 
+/* colors */
 .red { background: rgba(247, 109, 109, 1); }
 .orange { background: rgba(247, 167, 0, 1); }
 .yellow { background: rgba(249, 233, 0, 1); }
 .green { background: rgba(153, 198, 109, 1); }
 .blue { background: rgba(156, 202, 235, 1); }
+.indigo { background: rgba(157, 128, 179, 1); }
 .violet { background: rgba(153, 109, 249, 1); }
 .pink { background: rgba(249, 109, 249, 1); }
 .white { background: rgba(249, 249, 249, 1); }
+.grey { background: rgba(160, 160, 160, 1); }
 
 .details {
   position: relative;
