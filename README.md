@@ -1,2 +1,2 @@
 # Salsa_Nights
-Find all salsa nights in Grenoble with this web calendar!
+Find all salsa nights in Grenoble and around with this web calendar!
