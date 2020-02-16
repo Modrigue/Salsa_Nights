@@ -110,7 +110,7 @@
 		
 			// Tuesday
 			case 2:
-				this.addEvent(curDate, "da_vinci", '21h', 'Bachata/Kizomba' );
+				//this.addEvent(curDate, "da_vinci", '21h', 'Bachata/Kizomba' );
 				//this.addEvent(curDate, "bowling", 'Initiation à 20h30', 'Salsa' );
 				//this.addEvent(curDate, "loco", 'Initiation à 19h', 'Salsa/Bachata' );
 				break;
@@ -135,16 +135,22 @@
 			// Thursday
 			case 4:
 			{
-				// Da Vinci Club
-				this.addEvent(curDate, "da_vinci", '21h', 'Salsa/Bachata/Merengue' );
-
-				// Escapade Voiron
-				if ((curMonth == 12 && day == 12)
-				 || (curMonth == 12 && day == 19)
-				)
+				// Escapade Voiron 20h
+				if (curMonth == 02 && day == 27)
 				{
-					this.addEvent(curDate, "escapade", '20h30', 'Salsa/Bachata/Kizomba' );
+					this.addEvent(curDate, "escapade", '20h', 'Salsa/Bachata/Kizomba' );
+        }
+        
+        // Escapade Voiron 19h
+        if ((curMonth == 03 && day == 12)
+         || (curMonth == 03 && day == 26)
+        )
+				{
+					this.addEvent(curDate, "escapade", '19h', 'Salsa/Bachata/Kizomba' );
 				}
+
+				// Da Vinci Club
+				//this.addEvent(curDate, "da_vinci", '21h', 'Salsa/Bachata/Merengue' );
 				
 				break;
 			}
@@ -153,8 +159,11 @@
 			// Friday
 			case 5:
 			{
-				// After Grimaldi
-				this.addEvent(curDate, "after", '21h', 'Salsa/Bachata/Kizomba' );
+				// Gianonne 
+				if ((curMonth == 02 && day == 07))
+				{
+					this.addEvent(curDate, "gianonne", '21h30', 'Salsa/Bachatta' );
+				} 
 				  
 				// Upper Place
 				if ((curMonth == 11 && (day == 01))
@@ -169,6 +178,9 @@
 				{
 					this.addEvent(curDate, "upper_place", '21h30', 'Salsa/Bachata/Merengue' );
 				}
+				
+				// After Grimaldi
+				this.addEvent(curDate, "after", '21h', 'Bachata/Kizomba/Salsa' );
 				
 				// Salsa Grenoble
 				if ((curMonth == 02 && (day == 01))
@@ -200,9 +212,10 @@
 				
 				// Da Vinci
 				if ((curMonth == 12 && day == 07)
+			     || (curMonth == 02 && day == 08)
 				)
 				{
-					this.addEvent(curDate, "da_vinci", '21h30', 'Salsa/Bachata/Merengue' );
+					this.addEvent(curDate, "da_vinci", '21h', 'Salsa/Bachata/Kizomba' );
 				}
 				
 				// After Grimaldi
