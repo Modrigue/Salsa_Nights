@@ -205,14 +205,16 @@
 			case 6:
 			{
 				// Gianonne 
-				if ((curMonth == 09 && day == 28))
+        if ((curMonth == 09 && day == 28)
+         || (curMonth == 02 && day == 22)
+        )
 				{
-					this.addEvent(curDate, "gianonne", '20h30', 'Salsa/Bachatta' );
+					this.addEvent(curDate, "gianonne", '21h30', 'Salsa/Bachatta' );
 				} 
 				
 				// Da Vinci
 				if ((curMonth == 12 && day == 07)
-			     || (curMonth == 02 && day == 08)
+			   || (curMonth == 02 && day == 08)
 				)
 				{
 					this.addEvent(curDate, "da_vinci", '21h', 'Salsa/Bachata/Kizomba' );
@@ -225,10 +227,20 @@
 				}
 				
 				// After Grimaldi
-				if (curMonth == 12 && day == 07)
+        if ((curMonth == 12 && day == 07)
+         || (curMonth == 02 && day == 29)
+        )
 				{
 					this.addEvent(curDate, "after", '20h30', 'Salsa/Bachata/Kizomba/Rock' );
-				}
+        }
+        
+        // Rives, Parc de l'Orgère
+        if ((curMonth == 02 && day == 29)
+         || (curMonth == 04 && day == 25)
+        )
+        {
+          this.addEvent(curDate, "rives_org", '20h', 'Salsa/Bachata/Kizomba/Rock' );
+        }
 				
 				// Salsa Grenoble
 				if ((curMonth == 11 && (day == 09 || day == 23))
