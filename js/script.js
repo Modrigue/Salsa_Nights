@@ -548,11 +548,11 @@
 	  var map = createElement('a');
       var textNode = document.createTextNode("Plan");
       //map.setAttribute('href', ev.address);
-	  map.setAttribute('href', ev.location.address);
-      map.appendChild(textNode);
-
-      div.appendChild(square);
-      div.appendChild(name);
+    map.setAttribute('href', ev.location.address);
+    map.setAttribute('target', '_blank');
+    map.appendChild(textNode);
+    div.appendChild(square);
+    div.appendChild(name);
 	  div.appendChild(space);
 	  div.appendChild(styles);
 	  div.appendChild(space);
