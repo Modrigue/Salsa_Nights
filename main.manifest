@@ -1,7 +1,7 @@
 CACHE MANIFEST
 # v20120225
-index.htm
-Logic.js
-Global.css
-Render.css
-icon.png
+index.html
+js/Logic.js
+js/Global.css
+js/Render.css
+img/icon.png
