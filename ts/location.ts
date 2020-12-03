@@ -16,7 +16,7 @@ class LocationParams
 //////////////////////////////// KNOWN LOCATIONS //////////////////////////////
 
 
-let locations = new Map();
+let locations: Map<string, LocationParams> = new Map<string, LocationParams>();
 
 locations.set("after", new LocationParams("L\'After Grimaldi", 'violet', "https://www.google.fr/maps/place/L'After/@45.2031457,5.7669453,15z/data=!4m2!3m1!1s0x0:0x78e53140e3a09892?ved=2ahUKEwj2rNup2O3eAhUBC8AKHYDWCDgQ_BIwCnoECAUQCA"));
 locations.set("bowling", new LocationParams("Bowling Echirolles", 'pink', "https://www.google.fr/maps/place/BowlCenter+%C3%89chirolles/@45.1507527,5.7147063,17z/data=!3m1!4b1!4m5!3m4!1s0x478a8b4e8abd5aa1:0x5565c01cfe4f18f5!8m2!3d45.1507527!4d5.716895"));
