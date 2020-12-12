@@ -34,10 +34,11 @@
     
     // check month and year
     
+    const curDate = new Date();
     const curMonth = self.current.clone().month();
-    const nowMonth = moment().month();
+    const nowMonth = curDate.getMonth()
     const curYear = self.current.clone().year();
-    const nowYear = moment().year();
+    const nowYear = curDate.getFullYear();
     
     // create header at first launch
     if(!this.header)
@@ -67,7 +68,7 @@
       canGoBack = Boolean(false);
     if (curYear == nowYear && curMonth <= nowMonth)
       canGoBack = Boolean(false);
-    //alert("canGoBack = " + canGoBack);
+    //console.log("canGoBack = " + canGoBack);
 
     let children = this.header.children;
     for (let i = 0; i < children.length; i++)
