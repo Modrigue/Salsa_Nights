@@ -1,0 +1,23 @@
+{
+  "name": "Salsa_Nights",
+  "version": "1.0.0",
+  "description": "Find all salsa nights in Grenoble and around with this web calendar!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Modrigue/Salsa_Nights.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Modrigue/Salsa_Nights/issues"
+  },
+  "homepage": "https://github.com/Modrigue/Salsa_Nights#readme",
+  "dependencies": {
+    "dayjs": "^1.9.7"
+  }
+}
