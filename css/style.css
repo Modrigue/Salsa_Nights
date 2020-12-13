@@ -312,6 +312,11 @@ body {
 .entry.green:after { background: rgba(153, 198, 109, 1); }
 .entry.yellow:after { background: rgba(249, 233, 0, 1); }
 
+.iFooter
+{
+  text-align: center;;
+}
+
 /* Animations are cool!  */
 @-webkit-keyframes moveFromTopFade {
   from { opacity: .3; height:0px; margin-top:0px; -webkit-transform: translateX(-100%); }
