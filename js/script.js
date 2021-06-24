@@ -121,14 +121,14 @@
 			// Wednesday
 			case 3:
 			{
-				// Shag Café: 3rd Wednesday or every Wednesday in July or August
-				if ((day > 2*7 && day <= 3*7)
-				  || curMonth == 7
-				  || curMonth == 8
-				)
-				{
-					this.addEvent(curDate, "shag", 'Initiation à 20h', 'Salsa/Bachata/Merengue' );
-				}
+				//// Shag Café: 3rd Wednesday or every Wednesday in July or August
+				//if ((day > 2*7 && day <= 3*7)
+				//  || curMonth == 7
+				//  || curMonth == 8
+				//)
+				//{
+				//	this.addEvent(curDate, "shag", 'Initiation à 20h', 'Salsa/Bachata/Merengue' );
+				//}
 				
 				break;
 			}
@@ -137,19 +137,19 @@
 			// Thursday
 			case 4:
 			{
-				// Escapade Voiron 20h
-				if (curMonth ==  2 && day == 27)
-				{
-					this.addEvent(curDate, "escapade", '20h', 'Salsa/Bachata/Kizomba' );
-        }
+				//// Escapade Voiron 20h
+				//if (curMonth ==  2 && day == 27)
+				//{
+				//	this.addEvent(curDate, "escapade", '20h', 'Salsa/Bachata/Kizomba' );
+        //}
         
-        // Escapade Voiron 19h
-        if ((curMonth ==  3 && day == 12)
-         || (curMonth ==  3 && day == 26)
-        )
-				{
-					this.addEvent(curDate, "escapade", '19h', 'Salsa/Bachata/Kizomba' );
-				}
+        //// Escapade Voiron 19h
+        //if ((curMonth ==  3 && day == 12)
+        // || (curMonth ==  3 && day == 26)
+        //)
+				//{
+				//	this.addEvent(curDate, "escapade", '19h', 'Salsa/Bachata/Kizomba' );
+				//}
 
 				// Da Vinci Club
 				//this.addEvent(curDate, "da_vinci", '21h', 'Salsa/Bachata/Merengue' );
@@ -161,43 +161,46 @@
 			// Friday
 			case 5:
 			{
-				// Gianonne 
-				if ((curMonth ==  2 && day ==  7))
-				{
-					this.addEvent(curDate, "gianonne", '21h30', 'Salsa/Bachatta' );
-				} 
+				// Rectorat
+				this.addEvent(curDate, "rectorat", '14h30', 'Salsa/Bachata/Kizomba' );
+
+				//// Gianonne 
+				//if ((curMonth ==  2 && day ==  7))
+				//{
+				//	this.addEvent(curDate, "gianonne", '21h30', 'Salsa/Bachatta' );
+				//} 
 				  
-				// Upper Place
-				if ((curMonth == 11 && (day ==  1))
-				 || (curMonth == 12 && (day ==  6))
-				 || (curMonth ==  1 && (day == 17))
-				 || (curMonth ==  2 && (day ==  7))
-				 || (curMonth ==  3 && (day ==  6))
-				 || (curMonth ==  4 && (day ==  3))
-				 || (curMonth ==  5
-				 && (day ==  7))
-				)
-				{
-					this.addEvent(curDate, "upper_place", '21h30', 'Salsa/Bachata/Merengue' );
-				}
+				//// Upper Place
+				//if ((curMonth == 11 && (day ==  1))
+				// || (curMonth == 12 && (day ==  6))
+				// || (curMonth ==  1 && (day == 17))
+				// || (curMonth ==  2 && (day ==  7))
+				// || (curMonth ==  3 && (day ==  6))
+				// || (curMonth ==  4 && (day ==  3))
+				// || (curMonth ==  5
+				// && (day ==  7))
+				//)
+				//{
+				//	this.addEvent(curDate, "upper_place", '21h30', 'Salsa/Bachata/Merengue' );
+				//}
 				
-				// After Grimaldi
-				this.addEvent(curDate, "after", '21h', 'Bachata/Kizomba/Salsa' );
+				//// After Grimaldi
+				//this.addEvent(curDate, "after", '21h', 'Bachata/Kizomba/Salsa' );
 				
-				// Salsa Grenoble
-				if ((curMonth ==  2 && (day ==  1))
-				 || (curMonth ==  4 && (day ==  5))
-				)
-				{
-					this.addEvent(curDate, "salsa_gre", 'Initiation à 21h', 'Salsa/Bachata/Merengue' );
-				}
+				//// Salsa Grenoble
+				//if ((curMonth ==  2 && (day ==  1))
+				// || (curMonth ==  4 && (day ==  5))
+				//)
+				//{
+				//	this.addEvent(curDate, "salsa_gre", 'Initiation à 21h', 'Salsa/Bachata/Merengue' );
+				//}
 					  
-				// La Belle Electrique
-				if ((curMonth ==  1 && day == 11)
-				)
-				{
-					this.addEvent(curDate, "la_belle", '21h', 'Salsa/Bachata/Merengue' );
-				}
+				//// La Belle Electrique
+				//if ((curMonth ==  1 && day == 11)
+				//)
+				//{
+				//	this.addEvent(curDate, "la_belle", '21h', 'Salsa/Bachata/Merengue' );
+				//}
 				
 				break;
 			}
@@ -206,86 +209,80 @@
 			// Saturday
 			case 6:
 			{
-				// Gianonne 
-        if ((curMonth ==  9 && day == 28)
-         || (curMonth ==  2 && day == 22)
-        )
-				{
-					this.addEvent(curDate, "gianonne", '21h30', 'Salsa/Bachatta' );
-				} 
+				//// Gianonne 
+        //if ((curMonth ==  9 && day == 28)
+        // || (curMonth ==  2 && day == 22)
+        //)
+				//{
+				//	this.addEvent(curDate, "gianonne", '21h30', 'Salsa/Bachatta' );
+				//} 
 				
-				// Da Vinci
-				if ((curMonth == 12 && day ==  7)
-			   || (curMonth ==  2 && day ==  8)
-				)
-				{
-					this.addEvent(curDate, "da_vinci", '21h', 'Salsa/Bachata/Kizomba' );
-				}
+				//// Da Vinci
+				//if ((curMonth == 12 && day ==  7)
+			  // || (curMonth ==  2 && day ==  8)
+				//)
+				//{
+				//	this.addEvent(curDate, "da_vinci", '21h', 'Salsa/Bachata/Kizomba' );
+				//}
 				
-				// After Grimaldi
-				if (curMonth == 11 && day == 30)
-				{
-					this.addEvent(curDate, "after", '19h30', 'Salsa/Bachata/Kizomba/Rock' );
-				}
-				
-				// After Grimaldi
-        if ((curMonth == 12 && day ==  7)
-         || (curMonth ==  2 && day == 29)
-        )
-				{
-					this.addEvent(curDate, "after", '20h30', 'Salsa/Bachata/Kizomba/Rock' );
-        }
+				//// After Grimaldi
+        //if ((curMonth == 12 && day ==  7)
+        // || (curMonth ==  2 && day == 29)
+        //)
+				//{
+				//	this.addEvent(curDate, "after", '20h30', 'Salsa/Bachata/Kizomba/Rock' );
+        //}
         
-        // Rives, Parc de l'Orgère
-        if ((curMonth ==  2 && day == 29)
-         || (curMonth ==  4 && day == 25)
-        )
-        {
-          this.addEvent(curDate, "rives_org", '20h', 'Salsa/Bachata/Kizomba/Rock' );
-        }
+        //// Rives, Parc de l'Orgère
+        //if ((curMonth ==  2 && day == 29)
+        // || (curMonth ==  4 && day == 25)
+        //)
+        //{
+        //  this.addEvent(curDate, "rives_org", '20h', 'Salsa/Bachata/Kizomba/Rock' );
+        //}
 				
-				// Salsa Grenoble
-				if ((curMonth == 11 && (day ==  9 || day == 23))
-				 || (curMonth == 12 && (day ==  7 || day == 21))
-				 || (curMonth ==  1 && (day ==  4 || day == 18))
-				 || (curMonth ==  2 && (day ==  1 || day == 15 || day == 29))
-				 || (curMonth ==  3 && (day == 14 || day == 28))
-				 || (curMonth ==  4 && (day == 11))
-				 || (curMonth ==  5 && (day ==  9 || day == 23))
-				 || (curMonth ==  6 && (day ==  6 || day == 20))
-				)
-				{
-					this.addEvent(curDate, "salsa_gre", 'Initiation à 21h', 'Salsa/Bachata/Kizomba' );
-				}
+				//// Salsa Grenoble
+				//if ((curMonth == 11 && (day ==  9 || day == 23))
+				// || (curMonth == 12 && (day ==  7 || day == 21))
+				// || (curMonth ==  1 && (day ==  4 || day == 18))
+				// || (curMonth ==  2 && (day ==  1 || day == 15 || day == 29))
+				// || (curMonth ==  3 && (day == 14 || day == 28))
+				// || (curMonth ==  4 && (day == 11))
+				// || (curMonth ==  5 && (day ==  9 || day == 23))
+				// || (curMonth ==  6 && (day ==  6 || day == 20))
+				//)
+				//{
+				//	this.addEvent(curDate, "salsa_gre", 'Initiation à 21h', 'Salsa/Bachata/Kizomba' );
+				//}
 				
-				// Garric Danse Voiron: 3rd Saturday
-				if ((day > 2*7 && day <= 3*7)
-				  && curMonth <= 5
-				)
-				{
-				  this.addEvent(curDate, "garric", '21h30', 'Salsa/Bachata/Merengue' );
-				}
+				//// Garric Danse Voiron: 3rd Saturday
+				//if ((day > 2*7 && day <= 3*7)
+				//  && curMonth <= 5
+				//)
+				//{
+				//  this.addEvent(curDate, "garric", '21h30', 'Salsa/Bachata/Merengue' );
+				//}
 				
-				// Mambo Rock Chambéry Cocktail: 1st and 3rd Saturday
-				if ((day > 0*7 && day <= 1*7)
-				 || (day > 2*7 && day <= 3*7)
-				)
-				{
-					this.addEvent(curDate, "mambo", '21h', 'Salsa/Bachata/Kizomba' );
-				}
+				//// Mambo Rock Chambéry Cocktail: 1st and 3rd Saturday
+				//if ((day > 0*7 && day <= 1*7)
+				// || (day > 2*7 && day <= 3*7)
+				//)
+				//{
+				//	this.addEvent(curDate, "mambo", '21h', 'Salsa/Bachata/Kizomba' );
+				//}
 				
-				// Mambo Rock Chambéry SBK: 2nd Saturday
-				if (day > 1*7 && day <= 2*7)
-				{
-					this.addEvent(curDate, "mambo", '22h', 'Salsa/Bachata/Kizomba' );
-				}
+				//// Mambo Rock Chambéry SBK: 2nd Saturday
+				//if (day > 1*7 && day <= 2*7)
+				//{
+				//	this.addEvent(curDate, "mambo", '22h', 'Salsa/Bachata/Kizomba' );
+				//}
 				
-				// Mambo Rock Chambéry Tsunami
-				if ((curMonth == 3 && day == 28)
-				)
-				{
-					this.addEvent(curDate, "mambo", '22h', 'Salsa/Bachata/Kizomba' );
-				}
+				//// Mambo Rock Chambéry Tsunami
+				//if ((curMonth == 3 && day == 28)
+				//)
+				//{
+				//	this.addEvent(curDate, "mambo", '22h', 'Salsa/Bachata/Kizomba' );
+				//}
 				
 				break;
 			}
