@@ -483,28 +483,31 @@
       //currentOpened && currentOpened.parentNode.removeChild(currentOpened);
       if(currentOpened) {
         currentOpened.addEventListener('webkitAnimationEnd', function() {
-          currentOpened.parentNode.removeChild(currentOpened);
+          if (currentOpened && currentOpened.parentNode)
+            currentOpened.parentNode.removeChild(currentOpened);
         });
         currentOpened.addEventListener('oanimationend', function() {
-          currentOpened.parentNode.removeChild(currentOpened);
+          if (currentOpened && currentOpened.parentNode)
+            currentOpened.parentNode.removeChild(currentOpened);
         });
         currentOpened.addEventListener('msAnimationEnd', function() {
-          currentOpened.parentNode.removeChild(currentOpened);
+          if (currentOpened && currentOpened.parentNode)
+            currentOpened.parentNode.removeChild(currentOpened);
         });
         currentOpened.addEventListener('animationend', function() {
-          currentOpened.parentNode.removeChild(currentOpened);
+          if (currentOpened && currentOpened.parentNode)
+            currentOpened.parentNode.removeChild(currentOpened);
         });
         currentOpened.className = 'details out';
       }
 
-      //Create the Details Container
+      // Create the Details Container
       details = createElement('div', 'details in');
 
-      //Create the arrow
-      let arrow = createElement('div', 'arrow');
+      // Create the arrow
+      arrow = createElement('div', 'arrow');
 
-      //Create the event wrapper
-
+      // Create the event wrapper
       details.appendChild(arrow);
       el.parentNode.appendChild(details);
     }
@@ -518,6 +521,7 @@
 
     this.renderEvents(todaysEvents, details);
 
+    // position arrow behind selected day
     if (arrow !== undefined)
       arrow.style.left = el.offsetLeft - el.parentNode.offsetLeft + 27 + 'px';
   }
