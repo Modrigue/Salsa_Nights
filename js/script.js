@@ -104,13 +104,13 @@
 
 		switch (curDate.day())
 		{
-			// Monday
+			// MONDAY
 			case 1:
 				//
 				break;
 		
 		
-			// Tuesday
+			// TUESDAY
 			case 2:
 				//this.addEvent(curDate, "da_vinci", '21h', 'Bachata/Kizomba' );
 				//this.addEvent(curDate, "bowling", 'Initiation à 20h30', 'Salsa' );
@@ -118,7 +118,7 @@
 				break;
 			
 			
-			// Wednesday
+			// WEDNESDAY
 			case 3:
 			{
 				//// Shag Café: 3rd Wednesday or every Wednesday in July or August
@@ -134,7 +134,7 @@
 			}
 			
 			
-			// Thursday
+			// THURSDAY
 			case 4:
 			{
 				//// Escapade Voiron 20h
@@ -158,12 +158,9 @@
 			}
 			
 			
-			// Friday
+			// FRIDAY
 			case 5:
 			{
-				// Rectorat
-				this.addEvent(curDate, "rectorat", '14h30', 'Salsa/Bachata/Kizomba' );
-
 				//// Gianonne 
 				//if ((curMonth ==  2 && day ==  7))
 				//{
@@ -206,9 +203,12 @@
 			}
 			
 			
-			// Saturday
+			// SATURDAY
 			case 6:
 			{
+				// Rectorat
+				this.addEvent(curDate, "rectorat", '14h30', 'Salsa/Bachata/Kizomba' );
+
 				//// Gianonne 
         //if ((curMonth ==  9 && day == 28)
         // || (curMonth ==  2 && day == 22)
