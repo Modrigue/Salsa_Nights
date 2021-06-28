@@ -181,8 +181,12 @@
 				//	this.addEvent(curDate, "upper_place", '21h30', 'Salsa/Bachata/Merengue' );
 				//}
 				
-				//// After Grimaldi
-				//this.addEvent(curDate, "after", '21h', 'Bachata/Kizomba/Salsa' );
+				// After Grimaldi
+        if ((curMonth > 7)
+         || (curMonth >= 7 && day >= 9))
+        {
+				  this.addEvent(curDate, "after", '20h30', 'Bachata/Salsa/Kizomba' );
+        }
 				
 				//// Salsa Grenoble
 				//if ((curMonth ==  2 && (day ==  1))
